@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DarioVaez | Sistema</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap.css">
+   <link rel="stylesheet" href="../../plugins/datepicker/datepicker3.css">
+   <!-- Principal -->
+  <link rel="stylesheet" href="../../dist/css/Style.css">
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="../../index.html" class="logo">
+      <span class="logo-mini"><b>Dv</b></span>
+      <span class="logo-lg"><b>DarioVaez</b></span>
+    </a>
+    <!-- Logo -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Sistema de Alertas o Notificaciones-->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">2</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Tiene 2 Notificaciones</li>
+              <li>
+                <!-- Notificaciones -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                      page and may cause design problems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+               <!-- Notificaciones -->
+              </li>
+              <li class="footer"><a href="#">Ver todos</a></li>
+            </ul>
+          </li>
+         <!-- Sistema de Alertas o Notificaciones-->
+          
+          <!-- Cuenta de Usuario -->
+            <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Jesus Salvador</span>
+            </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <p>Jesus Salvador - Admin del Sistema</p>
+                </li>
+              </ul>
+            </li>
+          <!-- Cuenta de Usuario -->
+          <!-- Menu de Configuracion de Datos -->
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#"><i class="fa fa-fw fa-user"></i>Editar Perfil</a>
+                  <a href="#"><i class="fa fa-fw fa-unlock-alt"></i>Cambiar Contraseña</a>
+                  <a href="#"><i class="fa fa-fw fa-power-off"></i>Cerrar Sesion</a>
+                </li>
+              </ul>
+          </li>
+          <!-- Menu de Configuracion de Datos -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="main-sidebar">
+    <section class="sidebar">
+    <!-- Rol de Usuario & Estado -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Admin del Sistema</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+    <!-- Rol de Usuario & Estado -->
+      <!-- Menu Lateral Izquierdo -->
+     <ul class="sidebar-menu">
+        <li class="header">Sistema Dario Vaez</li>
+        <li class="active treeview">
+
+        <!-- Modulo de Sistemas -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Modulo de Sistema</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Solicitar Pedido de Compra</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Aprobar Pedido de compra</a></li>
+            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Generar Orden de Compra</a></li>
+          </ul>
+        </li>
+        <!-- Modulo de Sistemas -->
+
+        <!-- Modulo de Compras -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Modulo de Compras</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="#"><i class="fa fa-sitemap"></i> Gestionar Pedidos
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Solicitar pedido de Compra</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Aprobar pedido de Compra</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Generar Orden de Compra</a></li>
+                </ul>
+            </li>
+              <li>
+              <a href="#"><i class="fa fa-sitemap"></i> Gestionar Compra
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Proveedor</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Compra</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-pie-chart"></i> Administrar Almacén
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Notificar Productos Defectuosos</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Generar Devolucion</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Producto</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Actualizar Stock</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar E/S de Productos</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Alertar Stock</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Redistribuir Productos</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Modulo de Compras -->
+
+        <!-- Modulo de Ventas -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-line-chart"></i> <span>Modulo de Ventas</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+           <li>
+              <a href="#"><i class="fa fa-sitemap"></i> Gestionar Ventas
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Consultar Producto</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Cliente</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Venta</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Generar Comprobante de Pago</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Anular Venta </a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Devolucion</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Modulo de Ventas -->
+
+        <!-- Modulo de Caja -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-sitemap"></i>
+            <span>Modulo de Caja</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Registrar Proveedor</a></li>
+            <li><a href="Paginas/RegistrarCompra.html"><i class="fa fa-circle-o"></i> Registrar Compra</a></li>
+          </ul>
+        </li>
+        <!-- Modulo de Caja -->
+
+        <!-- Modulo de Almacen -->
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-list-alt"></i>
+            <span>Modulo de Almacen</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Registrar Proveedor</a></li>
+            <li><a href="Paginas/RegistrarCompra.html"><i class="fa fa-circle-o"></i> Registrar Compra</a></li>
+          </ul>
+        </li>
+        <!-- Modulo de Almacen -->
+
+        <li class="header">Sistema Dario Vaez</li>
+        </li>
+      </ul>
+      <!-- Menu Lateral Izquierdo -->
+    </section>
+  </aside>
+
+ 
+  <div class="content-wrapper">
+    <!-- Encabezado Body -->
+    <section class="content-header">
+      <h1>
+        Registrar Producto
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-laptop"></i>Gestionar Compras</a></li>
+        <li class="active">Registrar Compra</li>
+      </ol>
+    </section>
+    <!-- Encabezado Body -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Primera Tabla -->
+          <div class="box box-primary">
+            <form role="form">
+              <div class="form-group">
+                <div class="box-body">
+                  <div>
+                    <h4 class="col-md-3">Codigo de Producto : </h4>
+                    <h4 class="col-md-4">PR0001</h4>
+                    <h4 class="col-md-3">Fecha:</h4>
+                    <h4 class="col-md-2">12/11/2016</h4>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Primera Tabla -->
+
+
+          <div class="box box-body">
+            <form role="form">
+              <div class="form-group">
+                <div class="box-body">
+                  <div class="col-md-12">
+                    <h4 class="col-md-2">Sección :</h4>
+                     <div class="col-md-4">                     
+                        <div class="input-group clockpicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example1"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <h4 class="col-md-2 text-left">Tipo Producto:</h4>
+
+                      <div class="col-md-4">                     
+                        <div class="input-group clockpicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example2"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div> 
+                  </div>
+                  <div class="col-md-12">
+                    <h4 class="col-md-2">Marca: </h4>
+                     <div class="col-md-4">                     
+                        <div class="input-group clockpicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example3"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <h4 class="col-md-2 text-left">Descripcion:</h4>
+                      <div class="col-md-4">                     
+                        <input class="form-control input-sm" type="text">
+                      </div> 
+                   </div>
+                </div>
+              </div>
+            </form>
+          </div>
+                      
+        <script type="text/javascript">
+        $('.clockpicker').clockpicker();
+        </script>
+                
+          <div class="box box-primary">
+            <form role="form">
+              <div class="form-group">
+                <div class="box-body">
+                  <div class="col-md-12">
+                    <h4 class="col-md-2">Stock Minimo : </h4>
+                     <div class="col-md-4"> 
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                    <h4 class="col-md-2">Stock Maximo : </h4>
+                     <div class="col-md-4"> 
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>   
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+          <div class="box box-body">
+            <form role="form">
+              <div class="form-group">
+                <div class="box-body">
+                  <div class="col-md-12">
+                    <h4 class="col-md-2">Categoria :</h4>
+                      <div class="col-md-4">                     
+                        <div class="input-group clockpicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example4"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <h4 class="col-md-2 text-left">Sub Categoria:</h4>
+
+                      <div class="col-md-4">                     
+                        <div class="input-group clockpicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example5"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="col-md-12 CantidadBotones"> 
+                        <button type="button" class="btn btn-primary">Agregar</button>
+                      </div>
+                      <style>
+                        .CantidadBotones{
+                          text-align: right;
+                        }
+                      </style>
+                  </div>
+                   <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Detalle</th>
+                                  <th>Categoria</th>
+                                  <th>Sub Categoria</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Color</td>
+                                    <td>Azul</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Talla</td>
+                                    <td>Mediano</td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+                </div>
+              </div>
+            </form>
+          </div>
+           
+
+        <div class="box box-primary">
+            <form role="form">
+              <div class="form-group">
+                <div class="box-body">
+                  <div class="col-md-12">
+                    <h4 class="col-md-2">Imagen :</h4>
+                     <div class="col-md-4">                     
+                        <div class="form-group">
+                          <input type="file" id="exampleInputFile">
+                        </div>
+                      </div> 
+
+                      <h4 class="col-md-2 text-left">Angulo:</h4>
+
+                      <div class="col-md-4">                     
+                        <div class="input-group clockpicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example6"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="col-md-12 CantidadBotones"> 
+                        <button type="button" class="btn btn-primary">Agregar</button>
+                      </div>
+                      <style>
+                        .CantidadBotones{
+                          text-align: right;
+                        }
+                      </style>
+                  </div>
+                   <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Detalle</th>
+                                  <th>Imagen</th>
+                                  <th>Angulo</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Color</td>
+                                    <td>Azul</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Talla</td>
+                                    <td>Mediano</td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                      <div class="col-md-12 CantidadBotones"> 
+                        <button type="button" class="btn btn-default">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Grabar</button>
+                      </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div> 
+
+<!-- Primer Modal - Seleccionar -->
+<div class="modal fade example1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="col-lg-12">
+              <h4 class="modal-title" id="exampleModalLabel">Seccion</h4>
+            </div>  
+        </div>
+            <div class="modal-body">
+              <div class="row">
+                <form>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Seccion :</h4>
+                      <div class="col-md-3">
+                        <input class="form-control input-sm" type="text">
+                      </div>
+                      <div class="col-md-3">
+                        <button type="button" class="btn btn-block btn-primary">Nuevo</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Descripcion :</h4>
+                        <div class="col-md-3">
+                          <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                              <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                    <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Registro</th>
+                                  <th>Descripcion</th>
+                                  <th>Operacion</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>SCC001</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>SCC002</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+                </form>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>  
+            </div>
+      </div>
+    </div>
+  </div>
+<!-- Primer Modal - Seleccionar -->
+
+<!-- Segundo Modal - Tipo Producto -->
+<div class="modal fade example2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="col-lg-12">
+              <h4 class="modal-title" id="exampleModalLabel">Tipo Producto</h4>
+            </div>  
+        </div>
+            <div class="modal-body">
+              <div class="row">
+                <form>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Tipo Producto:</h4>
+                      <div class="col-md-3">
+                        <input class="form-control input-sm" type="text">
+                      </div>
+                      <div class="col-md-3">
+                        <button type="button" class="btn btn-block btn-primary">Nuevo</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Descripcion :</h4>
+                        <div class="col-md-3">
+                          <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                              <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                    <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Registro</th>
+                                  <th>Descripcion</th>
+                                  <th>Operacion</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>TPPR001</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>TPPR002</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+                </form>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>  
+            </div>
+      </div>
+    </div>
+  </div>
+<!-- Segundo Modal - Tipo Producto -->
+
+<!-- Tercer Modal - Marca -->
+<div class="modal fade example3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="col-lg-12">
+              <h4 class="modal-title" id="exampleModalLabel">Marca</h4>
+            </div>  
+        </div>
+            <div class="modal-body">
+              <div class="row">
+                <form>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Marca :</h4>
+                      <div class="col-md-3">
+                        <input class="form-control input-sm" type="text">
+                      </div>
+                      <div class="col-md-3">
+                        <button type="button" class="btn btn-block btn-primary">Nuevo</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Descripcion :</h4>
+                        <div class="col-md-3">
+                          <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                              <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                    <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Registro</th>
+                                  <th>Descripcion</th>
+                                  <th>Operacion</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>MC001</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>MC002</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+                </form>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>  
+            </div>
+      </div>
+    </div>
+  </div>
+<!-- Tercer Modal - Marca -->
+
+<!-- Cuarto Modal - Categoria -->
+<div class="modal fade example4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="col-lg-12">
+              <h4 class="modal-title" id="exampleModalLabel">Categoria</h4>
+            </div>  
+        </div>
+            <div class="modal-body">
+              <div class="row">
+                <form>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Categoria :</h4>
+                      <div class="col-md-3">
+                        <input class="form-control input-sm" type="text">
+                      </div>
+                      <div class="col-md-3">
+                        <button type="button" class="btn btn-block btn-primary">Nuevo</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Descripcion :</h4>
+                        <div class="col-md-3">
+                          <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                              <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                    <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Registro</th>
+                                  <th>Descripcion</th>
+                                  <th>Operacion</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>CT001</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>CT002</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+                </form>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>  
+            </div>
+      </div>
+    </div>
+  </div>
+<!-- Cuarto Modal - Categoria -->
+
+<!-- Quinto Modal - Categoria -->
+<div class="modal fade example5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="col-lg-12">
+              <h4 class="modal-title" id="exampleModalLabel">Sub Categoria</h4>
+            </div>  
+        </div>
+            <div class="modal-body">
+              <div class="row">
+                <form>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Categoria :</h4>
+                      <div class="col-md-3"> 
+                      <select class="form-control">
+                        <option>Talla</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                      <div class="col-md-3">
+                        <button type="button" class="btn btn-block btn-primary">Nuevo</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Sub Categoria :</h4>
+                       <div class="col-md-3">
+                        <input class="form-control input-sm" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                    <h4 class="col-md-2">Categoria:</h4> 
+                      <div class="col-md-3"> 
+                        <select class="form-control">
+                          <option>Talla</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>     
+
+                    <h4 class="col-md-3">Descripcion:</h4> 
+                         <div class="col-md-3">
+                          <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                              <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+
+                    <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Registro</th>
+                                  <th>Categoria</th>
+                                  <th>Sub Categoria</th>
+                                  <th>Operacion</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>SCT001</td>
+                                    <td>Talla</td>
+                                    <td>Small</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>SCT002</td>
+                                    <td>Talla</td>
+                                    <td>Mediano</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+                </form>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>  
+            </div>
+      </div>
+    </div>
+  </div>
+<!-- Quinto Modal - Categoria -->
+
+<!-- Sexto Modal - Angulo -->
+<div class="modal fade example6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="col-lg-12">
+              <h4 class="modal-title" id="exampleModalLabel">Angulo</h4>
+            </div>  
+        </div>
+            <div class="modal-body">
+              <div class="row">
+                <form>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Angulo :</h4>
+                      <div class="col-md-3">
+                        <input class="form-control input-sm" type="text">
+                      </div>
+                      <div class="col-md-3">
+                        <button type="button" class="btn btn-block btn-primary">Nuevo</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-2">Descripcion :</h4>
+                        <div class="col-md-3">
+                          <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                              <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                              </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                    <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Registro</th>
+                                  <th>Descripcion</th>
+                                  <th>Operacion</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>AG001</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>AG002</td>
+                                    <td>Lorem ipsum</td>
+                                    <td><button type="button" class="btn btn-primary">Seleccionar</button></td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+                </form>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>  
+            </div>
+      </div>
+    </div>
+  </div>
+<!-- Sexto Modal - Angulo -->
+
+
+
+
+
+  <!-- Pie de Pagina -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 1.0.0
+    </div>
+    <strong>Copyright &copy; 2016 <a href="www.google.com">DarioVaez</a>.</strong> Todos los Derechos Reservados
+  </footer>
+  <!-- Pie de Pagina -->
+
+  <div class="control-sidebar-bg"></div>
+
+
+
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script src="../../plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- Principal -->
+<script src="../../dist/js/app.js"></script>
+
+<script>
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+</script>
+
+</body>
+</html>
+
