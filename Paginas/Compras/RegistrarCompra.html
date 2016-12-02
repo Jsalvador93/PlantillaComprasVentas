@@ -297,7 +297,7 @@
                   <div>
                     <h4 class="col-md-3">Codigo de Compra : </h4>
                     <h4 class="col-md-4">00001</h4>
-                    <h4 class="col-md-3">Fecha de Registro:</h4>
+                    <h4 class="col-md-3">Fecha :</h4>
                     <h4 class="col-md-2">12/11/2016</h4>
                   </div>
                 </div>
@@ -312,27 +312,15 @@
               <div class="form-group">
                 <div class="box-body">
                   <div>
-                    <h4 class="col-md-2">Tipo Documento : </h4>
-                      <div class="col-md-4">
-                        <select class="form-control">
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
-                        </select>
+                    <h4 class="col-md-3">Tipo Comprobante : </h4>
+                    <h4 class="col-md-3">Factura </h4>
+                      
+
+                      <h4 class="col-md-2 text-left">N° Comprobante:</h4>
+
+                       <div class="col-md-4">
+                          <input class="form-control input-sm" type="text" placeholder="12345">
                       </div>
-
-                      <h4 class="col-md-2 text-left">Comprobante:</h4>
-
-                      <div class="col-md-4">                     
-                        <div class="input-group clockpicker">
-                          <input type="text" class="form-control">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-plus"></i></button>
-                          </div>
-                        </div>
-                      </div> 
                   </div>
                 </div>
               </div>
@@ -386,7 +374,7 @@
                         </div>
                       </div> 
 
-                      <h4 class="col-md-3">Fecha de Registro:</h4>
+                      <h4 class="col-md-3">Fecha de Compra:</h4>
                       <div class="col-md-3">
                         <div class="input-group date">
                           <div class="input-group-addon">
@@ -423,7 +411,7 @@
                   <div>
                     <div class="col-md-12">
 
-                      <h4 class="col-md-2">Producto : </h4>
+                      <h4 class="col-md-2">Pedido : </h4>
                       <div class="col-md-4">                     
                         <div class="input-group clockpicker">
                           <input type="text" class="form-control">
@@ -432,20 +420,6 @@
                           </div>
                         </div>
                       </div> 
-
-                      <h4 class="col-md-1">Precio:</h4>
-                      <h4 class="col-md-1"> S/.70.00</h4>
-                      <h4 class="col-md-1">Cantidad:</h4>
-
-                      <div class="col-md-3"> 
-                      <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                      </div>
                     </div>
 
                     <div class="col-md-12">
@@ -479,6 +453,7 @@
                               <thead>
                                 <tr>
                                   <th>Detalle</th>
+                                  <th>Pedido</th>
                                   <th>Descripcion</th>
                                   <th>Cantidad</th>
                                   <th>Total Producto</th>
@@ -488,51 +463,42 @@
                               <tbody>
                                 <tr>
                                   <td>1</td>
-                                  <td>1265</td>
-                                  <td>32.3%</td>
-                                  <td>$321.33</td>
+                                  <td>P0001</td>
+                                  <td>Camisa</td>
+                                  <td>3</td>
+                                  <td>150</td>
                                   <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                 </tr>
                                 <tr>
                                   <td>2</td>
-                                  <td>261</td>
-                                  <td>33.3%</td>
-                                  <td>$234.12</td>
+                                  <td>P0001</td>
+                                  <td>Pantalon</td>
+                                  <td>2</td>
+                                  <td>130</td>
                                   <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                 </tr>
                                 <tr>
                                   <td>3</td>
-                                  <td>665</td>
-                                  <td>21.3%</td>
-                                  <td>$16.34</td>
+                                  <td>P0002</td>
+                                  <td>Polo</td>
+                                  <td>5</td>
+                                  <td>120</td>
                                   <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                 </tr>
                                 <tr>
                                   <td>4</td>
-                                  <td>9516</td>
-                                  <td>89.3%</td>
-                                  <td>$1644.43</td>
+                                  <td>P0003</td>
+                                  <td>Abrigo</td>
+                                  <td>4</td>
+                                  <td>110</td>
                                   <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                 </tr>
                                 <tr>
                                   <td>5</td>
-                                  <td>23</td>
-                                  <td>34.3%</td>
-                                  <td>$23.52</td>
-                                  <td><button type="button" class="btn btn-primary">Quitar</button></td>
-                                </tr>
-                                <tr>
-                                  <td>6</td>
-                                  <td>421</td>
-                                  <td>60.3%</td>
-                                  <td>$724.32</td>
-                                  <td><button type="button" class="btn btn-primary">Quitar</button></td>
-                                </tr>
-                                <tr>
-                                  <td>7</td>
-                                  <td>1233</td>
-                                  <td>93.2%</td>
-                                  <td>$126.34</td>
+                                  <td>P0004</td>
+                                  <td>Polo</td>
+                                  <td>2</td>
+                                  <td>110</td>
                                   <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                 </tr>
                                 </tbody>
@@ -554,7 +520,6 @@
                <div class="col-md-12 CantidadBotones"> 
                     <button type="button" class="btn btn-default">Cancelar</button>
                     <button type="button" class="btn btn-primary">Grabar</button>
-                     <button type="button" class="btn btn-primary">Imprimir</button>
               </div>
          
               <style> 

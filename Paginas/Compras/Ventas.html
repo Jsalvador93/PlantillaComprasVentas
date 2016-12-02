@@ -370,9 +370,11 @@
                                   <th>Venta</th>
                                   <th>Fecha de Registro</th>
                                   <th>Registrador</th>
-                                   <th>Cliente</th>
-                                  <th>Comprobante</th>
+                                  <th>Cliente</th>
+                                  <th>Tipo Comprobante</th>
+                                  <th>Estado</th>
                                   <th>Operaciones</th>
+                                  <th>Comprobante</th>
                                 </tr>
                               </thead>
                             <tbody>
@@ -382,8 +384,18 @@
                                     <td>Usuario01</td>
                                     <td>Lorem ipsum</td>
                                     <td>Factura</td>
-                                    <td><button type="button" class="btn btn-primary">Detalle</button>
-                                    <button type="button" class="btn  btn-primary">Anular</button></td>
+                                    <td>
+                                      <div class="box-tools" data-toggle="tooltip">
+                                        <select class="form-control">
+                                          <option>Seleccionar</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                        </select>
+                                      </div>
+                                    </td>
+                                    <td><button type="button" class="btn btn-default">Detalle</button>
+                                    <button type="button" class="btn  btn-info">Anular</button></td>
+                                    <td><button type="button" class="btn  btn-primary">Generar</button></td>
                                   </tr>
                                   <tr>
                                     <td>C0002</td>
@@ -391,8 +403,18 @@
                                     <td>Usuario02</td>
                                     <td>Lorem ipsum</td>
                                     <td>Factura</td>
-                                    <td><button type="button" class="btn  btn-primary">Detalle</button>
-                                    <button type="button" class="btn  btn-primary">Anular</button></td>
+                                    <td>
+                                      <div class="box-tools" data-toggle="tooltip">
+                                        <select class="form-control">
+                                          <option>Seleccionar</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                        </select>
+                                      </div>
+                                    </td>
+                                    <td><button type="button" class="btn  btn-default">Detalle</button>
+                                    <button type="button" class="btn  btn-info">Anular</button></td>
+                                    <td><button type="button" class="btn  btn-primary">Generar</button></td>
                                   </tr>
                                   <tr>
                                      <td>C0003</td>
@@ -400,8 +422,18 @@
                                      <td>Usuario03</td>
                                      <td>Lorem ipsum</td>
                                      <td>Boleta</td>
-                                     <td><button type="button" class="btn  btn-primary">Detalle</button>
-                                     <button type="button" class="btn  btn-primary">Anular</button></td>
+                                     <td>
+                                      <div class="box-tools" data-toggle="tooltip">
+                                        <select class="form-control">
+                                          <option>Seleccionar</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                        </select>
+                                      </div>
+                                    </td>
+                                     <td><button type="button" class="btn  btn-default">Detalle</button>
+                                     <button type="button" class="btn  btn-info">Anular</button></td>
+                                     <td><button type="button" class="btn  btn-primary">Generar</button></td>
                                   </tr>
                                   <tr>
                                       <td>C0004</td>
@@ -409,8 +441,18 @@
                                       <td>Usuario01</td>
                                       <td>Lorem ipsum</td>
                                       <td>Boleta</td>
-                                      <td><button type="button" class="btn  btn-primary">Detalle</button>
-                                      <button type="button" class="btn  btn-primary">Anular</button></td>
+                                      <td>
+                                      <div class="box-tools" data-toggle="tooltip">
+                                        <select class="form-control">
+                                          <option>Seleccionar</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                        </select>
+                                      </div>
+                                    </td>
+                                      <td><button type="button" class="btn  btn-default">Detalle</button>
+                                      <button type="button" class="btn  btn-info">Anular</button></td>
+                                      <td><button type="button" class="btn  btn-primary">Generar</button></td>
                                   </tr>
                                   <tr>
                                       <td>C0005</td>
@@ -418,22 +460,36 @@
                                       <td>Usuario02</td>
                                       <td>Lorem ipsum</td>
                                       <td>Factura</td>
-                                      <td><button type="button" class="btn  btn-primary">Detalle</button>
-                                      <button type="button" class="btn  btn-primary">Anular</button></td>
-                                  </tr>
-                                  <tr>
-                                      <td>C0006</td>
-                                      <td>12/11/2016</td>
-                                      <td>Usuario04</td>
-                                      <td>Lorem ipsum</td>
-                                      <td>Factura</td>
-                                      <td><button type="button" class="btn  btn-primary">Detalle</button>
-                                      <button type="button" class="btn  btn-primary">Anular</button></td>
-                                  </tr>           
+                                      <td>
+                                      <div class="box-tools" data-toggle="tooltip">
+                                        <select class="form-control">
+                                          <option>Seleccionar</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                        </select>
+                                      </div>
+                                    </td>
+                                      <td><button type="button" class="btn  btn-default">Detalle</button>
+                                      <button type="button" class="btn  btn-info">Anular</button></td>
+                                      <td><button type="button" class="btn  btn-primary">Generar</button></td>
+                                  </tr>    
                             </tbody>
                             </table>
                           </div>
                         </div>
+                      </div>
+                      <div class="col-md-12">
+                        <nav class="pull-right">
+                          <ul class="pagination">
+                              <li><a href="#" aria-label="Anterior"><span aria-hidden="true">«</span></a></li>
+                              <li class="active"><a href="#">1 <span class="sr-only">(página actual)</span></a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li><a href="#" aria-label="Siguiente"><span aria-hidden="true">»</span></a></li>
+                          </ul>
+                        </nav>
                       </div>
                     </div>
                   </div>
