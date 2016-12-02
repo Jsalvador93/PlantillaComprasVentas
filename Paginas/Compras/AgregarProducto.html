@@ -363,32 +363,66 @@
               <div class="form-group">
                 <div class="box-body">
                   <div class="col-md-12">
-                    <h4 class="col-md-2">Stock Minimo : </h4>
-                     <div class="col-md-4"> 
-                      <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                    <h4 class="col-md-2">Lote :</h4>
+                     <div class="col-md-4">                     
+                        <div class="input-group clockpicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example1"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <h4 class="col-md-3 text-left">Cantidad :</h4>
+                      <div class="box-tools col-md-3" data-toggle="tooltip">
+                        <select class="form-control">
+                          <option>Seleccionar</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
                       </div>
-                    <h4 class="col-md-2">Stock Maximo : </h4>
-                     <div class="col-md-4"> 
-                      <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                  
+                  </div>
+
+
+                  <div class="col-md-12">
+                    <h4 class="col-md-2">Ubicación :</h4>
+                     <div class="col-md-4">                     
+                        <div class="input-group clockpicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example1"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div> 
+                  </div>
+
+                    <div class="col-md-12">
+                      <h4 class="col-md-3">Stock Máximo :</h4>
+                      <div class="box-tools col-md-3" data-toggle="tooltip">
+                        <select class="form-control">
+                          <option>Seleccionar</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
                       </div>
-                  </div>   
+
+                      <h4 class="col-md-3">Stock Máximo :</h4>
+                      <div class="box-tools col-md-3" data-toggle="tooltip">
+                        <select class="form-control">
+                          <option>Seleccionar</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </div>
+                  </div>
+
                 </div>
               </div>
             </form>
           </div>
-
+          
+        
 
           <div class="box box-body">
             <form role="form">
@@ -417,7 +451,7 @@
                       </div> 
 
                       <div class="col-md-12 CantidadBotones"> 
-                        <button type="button" class="btn btn-primary">Agregar</button>
+                        <button type="button" class="btn btn-info">Agregar</button>
                       </div>
                       <style>
                         .CantidadBotones{
@@ -433,6 +467,7 @@
                                   <th>Detalle</th>
                                   <th>Categoria</th>
                                   <th>Sub Categoria</th>
+                                  <th>Operacion</th>
                                 </tr>
                               </thead>
                             <tbody>
@@ -440,11 +475,13 @@
                                     <td>1</td>
                                     <td>Color</td>
                                     <td>Azul</td>
+                                    <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                   </tr>
                                   <tr>
                                     <td>2</td>
                                     <td>Talla</td>
                                     <td>Mediano</td>
+                                    <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                   </tr>
                             </tbody>
                             </table>
@@ -480,7 +517,7 @@
                       </div> 
 
                       <div class="col-md-12 CantidadBotones"> 
-                        <button type="button" class="btn btn-primary">Agregar</button>
+                        <button type="button" class="btn btn-info">Agregar</button>
                       </div>
                       <style>
                         .CantidadBotones{
@@ -496,6 +533,7 @@
                                   <th>Detalle</th>
                                   <th>Imagen</th>
                                   <th>Angulo</th>
+                                  <th>Operacion</th>
                                 </tr>
                               </thead>
                             <tbody>
@@ -503,11 +541,13 @@
                                     <td>1</td>
                                     <td>Color</td>
                                     <td>Azul</td>
+                                    <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                   </tr>
                                   <tr>
                                     <td>2</td>
                                     <td>Talla</td>
                                     <td>Mediano</td>
+                                    <td><button type="button" class="btn btn-primary">Quitar</button></td>
                                   </tr>
                             </tbody>
                             </table>
@@ -515,8 +555,8 @@
                         </div>
 
                       <div class="col-md-12 CantidadBotones"> 
-                        <button type="button" class="btn btn-default">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Grabar</button>
+                        <button type="button" class="btn btn-default">Grabar</button>
+                        <button type="button" class="btn btn-primary">Cancelar</button>
                       </div>
                 </div>
               </div>
