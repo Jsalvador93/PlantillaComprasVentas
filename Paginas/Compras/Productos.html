@@ -678,7 +678,7 @@
                                     
                                     
                                     <td><button type="button" class="btn btn-default" data-toggle="modal" data-target=".example1">Detalle</button>
-                                    <button type="button" class="btn btn-info">Precio</button>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target=".example2">Precio</button>
                                     <td> 
                                       <div class="box-tools" data-toggle="tooltip">
                                         <select class="form-control">
@@ -947,34 +947,96 @@
     </div>
   </div>
   <!-- Primer Modal / Detalle Producto -->
-  <!-- Modal de Prueba -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-    <div class="modal-dialog" role="document">
+
+ <!-- Segundo Modal / Precio Producto -->
+<div class="modal fade example2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="col-lg-2">
-            <h4 class="modal-title" id="exampleModalLabel" >Compra</h4>
-          </div>
-          
+            <div class="col-lg-12">
+              <h3 class="modal-title" id="exampleModalLabel">Precio</h3>
+            </div>  
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-             <h1>Hola</h1>
+            <div class="modal-body">
+              <div class="row">
+                <form>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-3">Sección:</h4>
+                      <h4 class="col-md-3">Prendas</h4>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-3">Código Producto :</h4>
+                      <h4 class="col-md-3">PR0001</h4>
+                      <h4 class="col-md-2">Marca:</h4>
+                      <h4 class="col-md-3">Nike</h4>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-3">Fecha:</h4>
+                      <h4 class="col-md-2">10/11/2016</h4>
+                     <button type="button" class="btn btn-info col-md-3 col-md-offset-1">Nuevo</button>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4 class="col-md-3">Precio Compra:</h4>
+                      <div class="col-md-3">
+                         <input class="form-control input-sm" type="text" class="col-md-3">
+                      </div>
+                      <h4 class="col-md-3">Precio Venta:</h4>
+                      <div class="col-md-3">
+                         <input class="form-control input-sm" type="text" class="col-md-3">
+                      </div>
+                    
+                    </div>
+                  </div>
+                    <div class="col-md-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Registro</th>
+                                  <th>Precio de Compra</th>
+                                  <th>Precio de Venta</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>25/12/2016</td>
+                                    <td>s/. 50.00</td>
+                                    <td>s/. 70.00</td>
+                                    <td>150</td>
+                                  </tr>
+                                  <tr>
+                                    <td>01/01/2017</td>
+                                    <td>s/. 80.00</td>
+                                    <td>s/. 110.00</td>
+                                    <td>140</td>
+                                  </tr>
+                            </tbody>
+                            </table>
+                          </div>
+                        </div>
+     
+                </form>
+             </div>
+
             </div>
-           
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Cambios</button>
-        </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+            </div>
       </div>
     </div>
   </div>
-  <!-- Modal de Prueba -->
 
+ <!-- Segundo Modal / Precio Producto -->
+
+ 
   <!-- Pie de Pagina -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
